@@ -6,6 +6,7 @@
 <meta name="description" content="A  FILL THIS OUTTTTT!!!!!!!!!!!!">
 <meta name="keywords" content="   ">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,11 +42,35 @@
 
   <div class="splash1">
     <h1 class="splash2" style="float: left">Friendly with delicious food!</h1>
-    <h1 class="splash2" style="float: right; margin-right: 15%;">56, Collingwood Street. Ngaio, Wellington</h1>
+    <h1 class="splash2" style="float: right; margin-right: 15%;">61, Ottawa Road. Ngaio, Wellington</h1>
   </div>
   <div class="indexContainer">
     <div class="indexCollum1">
-      <img src="media/header1.jpg" alt="" class="indexHeader">
+      <div class="mosCol1">
+        <div class="parent-container">
+          <a href="media/menuItems/main1.jpg"><img src="media/menuItems/main1.jpg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main4.jpg"><img src="media/menuItems/main4.jpg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main7.jpg"><img src="media/menuItems/main7.jpg" class="mosImg" alt="Moziaique Image"></a>
+        </div>
+      </div>
+
+      <div class="mosCol2">
+        <div class="parent-container">
+          <a href="media/menuItems/main2.jpg"><img src="media/menuItems/main2.jpg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main5.jpeg"><img src="media/menuItems/main5.jpeg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main8.jpg"><img src="media/menuItems/main8.jpg" class="mosImg" alt="Moziaique Image"></a>
+        </div>
+      </div>
+
+      <div class="mosCol3">
+        <div class="parent-container">
+          <a href="media/menuItems/main3.jpg"><img src="media/menuItems/main3.jpg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main6.jpg"><img src="media/menuItems/main6.jpg" class="mosImg" alt="Moziaique Image"></a>
+          <a href="media/menuItems/main9.jpg"><img src="media/menuItems/main9.jpg" class="mosImg" alt="Moziaique Image"></a>
+        </div>
+      </div>
+
+      <p style="color: #fafaf2;">  ds</p>
       <p>
         <strong>Cafe Villa</strong> is open for breakfast, brunch and lunch Monday to Friday from 8.30am  to 4.00pm and
         Saturday and Sunday 9.30am to 4.00pm, as well as for delicious take-away lunch and snack food.
@@ -66,7 +91,7 @@
       <div class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d512.6164235245642!2d174.77424871609506!3d-41.24768394493158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38ae021e9fde63%3A0x7e428be96eb1f47f!2sCafe%20Villa!5e0!3m2!1sen!2snz!4v1574049143522!5m2!1sen!2snz" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <p>
-          56, Collingwood Street <br>
+          61, Ottawa Road <br>
           Ngaio, Wellington
         </p>
       </div>
@@ -117,6 +142,32 @@
 
   <!-- Javascript Area -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script>
+
+  // J Query STARTS
+
+  // Magnific Popup
+  $(document).ready(function() {
+    $('.image-link').magnificPopup({type:'image'});
+  });
+
+  $('.test-popup-link').magnificPopup({
+    type: 'image'
+    // other options
+  });
+
+  $('.parent-container').magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'image',
+    // other options
+    gallery: {
+      enabled: true
+    }
+  });
+  </script>
+
+
   <script>
     var slideIndex = 0;
     carousel();
