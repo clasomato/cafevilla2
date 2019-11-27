@@ -118,6 +118,10 @@ h1, h2 {
 .mobileNav {
   display: none;
 }
+
+#menuactive {
+  text-decoration: underline;
+}
 /* Mobile Optimization */
 @media screen and (max-width: 600px) {
   .navLogo {
@@ -137,6 +141,7 @@ h1, h2 {
     margin-top: 0%;
   }
 }
+
 
 /**NAvigation ENDS**/
 
@@ -248,6 +253,18 @@ h1, h2 {
   border-radius: 0.5em;
 }
 
+.callToAction {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lobster', cursive;
+  position: absolute;
+  font-size: 6em;
+  z-index: 10;
+  margin-left: 15%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
 /* Mobile Optimization */
 @media screen and (max-width: 600px) {
   .indexContainer {
@@ -298,6 +315,13 @@ h1, h2 {
   border-radius: 0.5em 0.5em 0.5em 0.5em;
   margin: auto;
   margin-bottom: 5%;
+}
+
+.mosImg:hover {
+  -webkit-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
+  -moz-box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 50px -31px rgba(0,0,0,0.5);
+  cursor: pointer;
 }
 
 .mosCol1 {
