@@ -549,34 +549,33 @@ textarea {
 /* Footer */
 .footer {
   width: 100%;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 2%;
   background-color: #B71041;
   overflow: auto;
 }
 
 .footerText {
-  float: left;
-}
-
-.footerSocial {
-  float: left;
+  text-align: center;
 }
 
 .footerNav {
-  margin-left: 18%;
-  width: 10%;
-  padding-right: 0px;
-  margin-right: 0px;
-  float: left;
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.footerNav a {
+  display: inline-block;
+  margin-right: 1%;
 }
 
 .navFooter {
-  float: left;
   text-decoration: none;
   color: white;
   animation: icon_after 0.2s;
   animation-fill-mode: forwards;
+  font-size: 1em;
 }
 
 .navFooter:hover {
